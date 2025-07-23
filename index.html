@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Página</title>
+    <style>
+        body {
+            background-color: #f0f8ff; 
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50; 
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-top: 10px;
+            line-height: 2; 
+        }
+
+        img {
+            border-radius: 10px; 
+            width: 300px; 
+            display: block;
+            margin: 10px auto;
+        }
+
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #2c3e50;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #d35400; 
+        }
+
+        #mensagem {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Leonardo Klein</h1>
+
+    <p>
+        Meu nome é Leonardo, tenho 23 anos e moro em Santo Angelo. Gosto muito de programação, música e jogos eletrônicos. Estou aprendendo desenvolvimento web e me dedicando bastante a isso!
+    </p>
+
+    <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+    <div id="mensagem"></div>
+
+    <h2>Meus hobbies favoritos:</h2>
+    <ul>
+        <li>Ouvir música</li>
+        <li>Jogar videogame</li>
+        <li>Programar projetos pessoais</li>
+    </ul>
+
+    <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="Pessoa programando">
+
+    <h2>Países que quero visitar</h2>
+    <table>
+        <tr>
+            <td>Japão</td>
+            <td><img src="https://flagcdn.com/w320/jp.png" alt="Japão" width="100"></td>
+        </tr>
+        <tr>
+            <td>Canadá</td>
+            <td><img src="https://flagcdn.com/w320/ca.png" alt="Canadá" width="100"></td>
+        </tr>
+        <tr>
+            <td>Itália</td>
+            <td><img src="https://flagcdn.com/w320/it.png" alt="Itália" width="100"></td>
+        </tr>
+    </table>
+
+    <p>Visite meu site favorito de tecnologia: <a href="https://www.tecmundo.com.br" target="_blank">TecMundo</a></p>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "Continue aprendendo! Cada linha de código te leva mais longe.";
+        }
+    </script>
+
+</body>
+</html>
